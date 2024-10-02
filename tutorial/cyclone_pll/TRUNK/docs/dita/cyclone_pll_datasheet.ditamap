@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="cyclone_pll_datasheet.dita">
+        <topicref href="topics/cyclone_pll_intro.md" format="markdown"/>
+        <topicref href="topics/cyclone_pll_details.dita"/>
+        <topicref href="docgen/cyclone_pll_pi.dita#pi"/>
+        <topicref href="docgen/cyclone_pll_ipxact.dita#ipxact"/>
+    </topicref>
+</map>

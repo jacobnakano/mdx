@@ -1,0 +1,15 @@
+simulator lang=spectre
+
+//----------------------------------//
+//       CM123                      //
+//--------------------------------- //
+subckt CM123_S PLUS MINUS SUB
+parameters c csub
+
+C0 (PLUS MINUS) capacitor c=(c*(((1+mcm_CM123_c)-1)+1)*(1+5E-6*abs(v(PLUS)-v(MINUS)))*(1-1.4E-5*(temp-25)+5.2E-7*(temp-25)*(temp-25)))*CM123_c
+C1 (PLUS SUB) capacitor c=csub/2
+C2 (MINUS SUB) capacitor c=csub/2
+
+ends CM123_S
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="CADenv_datasheet.dita">
+        <topicref href="topics/CADenv_intro.md" format="markdown"/>
+        <topicref href="topics/CADenv_details.dita"/>
+        <topicref href="docgen/CADenv_pi.dita#pi"/>
+        <!-- <topicref href="docgen/CADenv_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

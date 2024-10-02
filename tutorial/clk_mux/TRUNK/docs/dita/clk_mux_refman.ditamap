@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="clk_mux_refman.dita">
+        <topicref href="topics/clk_mux_intro.md" format="markdown"/>
+        <topicref href="topics/clk_mux_details.dita"/>
+    </topicref>
+</map>

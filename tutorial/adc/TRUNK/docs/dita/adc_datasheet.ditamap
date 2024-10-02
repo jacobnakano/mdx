@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="adc_datasheet.dita">
+        <topicref href="topics/adc_intro.md" format="markdown"/>
+        <topicref href="topics/adc_details.dita"/>
+        <topicref href="docgen/adc_pi.dita#pi"/>
+        <!-- <topicref href="docgen/adc_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

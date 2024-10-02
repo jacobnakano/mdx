@@ -1,0 +1,16 @@
+#
+# Starting up cshrc for the Process Design Kit.
+#
+# Setting the environmental variables.
+# You must source this file before starting Cadence.
+
+
+# *** Design-Kit Installed path
+#
+# You must set the directory which you installed Design Kit.
+#
+setenv STARCAD_AMS_PDK XXXX/MS90G/V010301/ipl_pdk
+
+etenv SYNOPSYS_CUSTOM_PROJECT $STARCAD_AMS_PDK/env/auxx
+
+source /mixhome/training/ciranova/PyCellStudio/Rev433_lnx64/quickstart/tcshrc

@@ -1,0 +1,9 @@
+#define NODE_90NM
+//#define PROCESS_G
+#define PROCESS_LP
+#define METAL_5X1Z1U
+
+#define DRC_CALIBRE
+//#define DRC_ASSURA
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="sys_bus_datasheet.dita">
+        <topicref href="topics/sys_bus_intro.md" format="markdown"/>
+        <topicref href="topics/sys_bus_details.dita"/>
+        <topicref href="docgen/sys_bus_pi.dita#pi"/>
+        <!-- <topicref href="docgen/sys_bus_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

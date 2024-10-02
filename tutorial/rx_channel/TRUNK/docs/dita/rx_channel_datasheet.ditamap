@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="rx_channel_datasheet.dita">
+        <topicref href="topics/rx_channel_intro.md" format="markdown"/>
+        <topicref href="topics/rx_channel_details.dita"/>
+        <topicref href="docgen/rx_channel_pi.dita#pi"/>
+        <!-- <topicref href="docgen/rx_channel_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="gen_dig_refman.dita">
+        <topicref href="topics/gen_dig_intro.md" format="markdown"/>
+        <topicref href="topics/gen_dig_details.dita"/>
+    </topicref>
+</map>

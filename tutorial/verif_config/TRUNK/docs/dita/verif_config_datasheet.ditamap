@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="verif_config_datasheet.dita">
+        <topicref href="topics/verif_config_intro.md" format="markdown"/>
+        <topicref href="topics/verif_config_details.dita"/>
+        <topicref href="docgen/verif_config_pi.dita#pi"/>
+        <!-- <topicref href="docgen/verif_config_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

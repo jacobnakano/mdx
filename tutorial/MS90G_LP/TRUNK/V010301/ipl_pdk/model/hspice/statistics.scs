@@ -1,0 +1,40 @@
+// Create Stimulus File.
+simulator lang=spectre
+
+parameters mcm_NENHT33_vth0 = 0
+parameters mcm_NENHT33_u0 = 0
+parameters mcm_PENHT33_vth0 = 0
+parameters mcm_PENHT33_u0 = 0
+parameters mcm_NPNV050_is = 0
+parameters mcm_PNPV050_is = 0
+parameters mcm_CM123_c = 0
+parameters mcm_RPOLYP_r = 0
+parameters mcm_RSPOLYP_r = 0
+parameters mcm_NENHHP_vth0 = 0
+parameters mcm_NENHHP_u0 = 0
+parameters mcm_PENHHP_vth0 = 0
+parameters mcm_PENHHP_u0 = 0
+
+statistics {
+ process { // process: generate random number once per MC run
+ }
+ mismatch { // mismatch: generate a random number per instance
+  vary mcm_NENHT33_vth0 dist=gauss std=10.6666666666667e-9 percent=no
+  vary mcm_NENHT33_u0 dist=gauss std=1.43333333333333e-8 percent=no
+  vary mcm_PENHT33_vth0 dist=gauss std=7.33333333333333e-9 percent=no
+  vary mcm_PENHT33_u0 dist=gauss std=1.2e-8 percent=no
+  vary mcm_CM123_c dist=gauss std=0.133333333333333e-2 percent=no
+  vary mcm_NPNV050_is dist=gauss std=7.64e-8 percent=no
+  vary mcm_PNPV050_is dist=gauss std=0.436666666666667e-8 percent=no
+  vary mcm_RPOLYP_r dist=gauss std=0.933333333333333e-8 percent=no
+  vary mcm_RSPOLYP_r dist=gauss std=1.56666666666667e-8 percent=no
+  vary mcm_NENHHP_vth0 dist=gauss std=4e-9 percent=no
+  vary mcm_NENHHP_u0 dist=gauss std=3.24333333333333e-8 percent=no
+  vary mcm_PENHHP_vth0 dist=gauss std=4.3e-9 percent=no
+  vary mcm_PENHHP_u0 dist=gauss std=3.06e-8 percent=no
+ }
+
+
+ // specify a global distribution truncation factor
+// truncate tr=3.0
+}

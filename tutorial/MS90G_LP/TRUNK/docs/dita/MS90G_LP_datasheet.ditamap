@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="MS90G_LP_datasheet.dita">
+        <topicref href="topics/MS90G_LP_intro.md" format="markdown"/>
+        <topicref href="topics/MS90G_LP_details.dita"/>
+        <topicref href="docgen/MS90G_LP_pi.dita#pi"/>
+        <topicref href="docgen/MS90G_LP_ipxact.dita#ipxact"/>
+    </topicref>
+</map>

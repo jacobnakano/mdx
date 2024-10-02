@@ -1,0 +1,4 @@
+#include "io_tsmc18:io_tsmc18_doc.pmq"
+
+[list drc labels="flags"]
+ESDPAD

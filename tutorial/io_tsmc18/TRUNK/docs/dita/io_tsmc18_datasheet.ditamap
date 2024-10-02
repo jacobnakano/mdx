@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="io_tsmc18_datasheet.dita">
+        <topicref href="topics/io_tsmc18_intro.md" format="markdown"/>
+        <topicref href="topics/io_tsmc18_details.dita"/>
+        <topicref href="docgen/io_tsmc18_pi.dita#pi"/>
+        <!-- <topicref href="docgen/io_tsmc18_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

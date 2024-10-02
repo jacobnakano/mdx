@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="cpu_datasheet.dita">
+        <topicref href="topics/cpu_intro.md" format="markdown"/>
+        <topicref href="topics/cpu_details.dita"/>
+        <topicref href="docgen/cpu_pi.dita#pi"/>
+        <!-- <topicref href="docgen/cpu_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

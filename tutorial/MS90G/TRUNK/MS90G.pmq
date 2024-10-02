@@ -1,0 +1,41 @@
+#include "MS90G:MS90G_doc.pmq"
+
+[list drc labels="engine" norecurse]
+#ifdef DRC_CALIBRE
+  calibre
+  (drc_calibre)
+#elsif DRC_ASSURA
+  assura
+  (drc_assura)
+#endif
+
+[list drc_calibre labels="-engine, rules"]
+#ifdef NODE_90NM
+  #ifdef PROCESS_G
+    #ifdef METAL_5X1Z1U
+      pv/calibre/drc/tsmc/drc_N90G_5x1z1u.rul
+    #endif
+    #ifdef METAL_7X2Z1Y
+      pv/calibre/drc/tsmc/drc_N90G_4x2z1y.rul
+    #endif
+  #endif
+  #ifdef PROCESS_LP
+    #ifdef METAL_5X1Z1U
+      pv/calibre/drc/tsmc/drc_N90LP_5x1z1u.rul
+    #endif
+  #endif
+#endif
+
+[list drc_assura labels="-engine,rules"]
+#ifdef NODE_90NM
+  #ifdef PROCESS_G
+    #ifdef METAL_5X1Z1U
+      pv/assura/drc/tsmc_90g_5x1z1u.rul
+    #endif
+  #endif
+  #ifdef PROCESS_LP
+    #ifdef METAL_5X1Z1U
+      pv/assura/drc/tsmc_90lp_5x1z1u.rul
+    #endif
+  #endif
+#endif

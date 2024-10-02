@@ -1,0 +1,105 @@
+//////////////////////////////////////////
+// FF                                   //
+//////////////////////////////////////////
+.lib FF
+.include "./statistics.sp"
+.include "./mos/GE33MVT_v1_FF"
+.include "./mos/MOS12_FF.sp"
+.include "./mos/MOS12_MODEL.sp"
+.include "./mos/MOS12_COMMON.sp"
+.include "./mos/MOS12_COMMON_DVTH.sp"
+.include "./bjt/NPNV050_S"
+.include "./bjt/PNPV050_S"
+.include "./cap/CM123_S"
+.include "./res/RPOLYP_S"
+.include "./res/RSPOLYP_S"
+
+.endl FF
+
+
+//////////////////////////////////////////
+// FS                                   //
+//////////////////////////////////////////
+.lib FS
+.include "./statistics.sp"
+.include "./mos/GE33MVT_v1_FS"
+.include "./mos/MOS12_FS.sp"
+.include "./mos/MOS12_MODEL.sp"
+.include "./mos/MOS12_COMMON.sp"
+.include "./mos/MOS12_COMMON_DVTH.sp"
+.include "./bjt/NPNV050_S"
+.include "./bjt/PNPV050_S"
+.include "./cap/CM123_S"
+.include "./res/RPOLYP_S"
+.include "./res/RSPOLYP_S"
+
+.endl FS
+
+//////////////////////////////////////////
+// SF                                   //
+//////////////////////////////////////////
+.lib SF
+.include "./statistics.sp"
+.include "./mos/GE33MVT_v1_SF"
+.include "./mos/MOS12_SF.sp"
+.include "./mos/MOS12_MODEL.sp"
+.include "./mos/MOS12_COMMON.sp"
+.include "./mos/MOS12_COMMON_DVTH.sp"
+.include "./bjt/NPNV050_S"
+.include "./bjt/PNPV050_S"
+.include "./cap/CM123_S"
+.include "./res/RPOLYP_S"
+.include "./res/RSPOLYP_S"
+
+.endl SF
+
+//////////////////////////////////////////
+// SS                                   //
+//////////////////////////////////////////
+.lib SS
+.include "./statistics.sp"
+.include "./mos/GE33MVT_v1_SS"
+.include "./mos/MOS12_SS.sp"
+.include "./mos/MOS12_MODEL.sp"
+.include "./mos/MOS12_COMMON.sp"
+.include "./mos/MOS12_COMMON_DVTH.sp"
+.include "./bjt/NPNV050_S"
+.include "./bjt/PNPV050_S"
+.include "./cap/CM123_S"
+.include "./res/RPOLYP_S"
+.include "./res/RSPOLYP_S"
+
+.endl SS
+
+//////////////////////////////////////////
+// TT                                   //
+//////////////////////////////////////////
+.lib TT
+.include "./statistics.sp"
+.include "./mos/GE33MVT_v1_TT"
+.include "./mos/MOS12_CC.sp"
+.include "./mos/MOS12_MODEL.sp"
+.include "./mos/MOS12_COMMON.sp"
+.include "./mos/MOS12_COMMON_DVTH.sp"
+.include "./bjt/NPNV050_S"
+.include "./bjt/PNPV050_S"
+.include "./cap/CM123_S"
+.include "./res/RPOLYP_S"
+.include "./res/RSPOLYP_S"
+
+.endl TT
+
+////////////////////////////////////////////
+//// WW                                   //
+////////////////////////////////////////////
+//.lib WW
+//.include "./statistics.sp"
+//.include "./mos/GE33MVT_v1_WW"
+//.include "./bjt/NPNV050_S"
+//.include "./bjt/PNPV050_S"
+//.include "./cap/CM123_S"
+//.include "./res/RPOLYP_S"
+//.include "./res/RSPOLYP_S"
+//
+//.endl WW
+

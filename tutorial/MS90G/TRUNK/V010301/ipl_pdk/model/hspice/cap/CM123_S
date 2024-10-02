@@ -1,0 +1,12 @@
+//----------------------------------//
+//       CM123                      //
+//--------------------------------- //
+.subckt CM123_S PLUS MINUS SUB c=0 csub=0 mcm_CM123_c=0
+.flat c0
+C0 (PLUS MINUS) '(c*(((1+mcm_CM123_c)-1)+1)*(1+5E-6*abs(v(PLUS)-v(MINUS)))*(1-1.4E-5*(temper-25)+5.2E-7*(temper-25)*(temper-25)))*CM123_c'
+C1 (PLUS SUB) 'csub/2'
+C2 (MINUS SUB) 'csub/2'
+
+.ends CM123_S
+
+

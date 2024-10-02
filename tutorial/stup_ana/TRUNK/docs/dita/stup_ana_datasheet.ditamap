@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="stup_ana_datasheet.dita">
+        <topicref href="topics/stup_ana_intro.md" format="markdown"/>
+        <topicref href="topics/stup_ana_details.dita"/>
+        <topicref href="docgen/stup_ana_pi.dita#pi"/>
+        <!-- <topicref href="docgen/stup_ana_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

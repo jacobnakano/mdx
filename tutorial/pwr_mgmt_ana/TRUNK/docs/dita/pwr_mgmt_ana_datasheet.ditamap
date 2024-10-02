@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="pwr_mgmt_ana_datasheet.dita">
+        <topicref href="topics/pwr_mgmt_ana_intro.md" format="markdown"/>
+        <topicref href="topics/pwr_mgmt_ana_details.dita"/>
+        <topicref href="docgen/pwr_mgmt_ana_pi.dita#pi"/>
+        <!-- <topicref href="docgen/pwr_mgmt_ana_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

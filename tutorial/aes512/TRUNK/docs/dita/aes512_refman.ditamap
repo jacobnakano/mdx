@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="aes512_refman.dita">
+        <topicref href="topics/aes512_intro.md" format="markdown"/>
+        <topicref href="topics/aes512_details.dita"/>
+    </topicref>
+</map>

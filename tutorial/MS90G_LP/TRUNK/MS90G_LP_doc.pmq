@@ -1,0 +1,51 @@
+// convert properties to ipxact
+// syntax:
+//   <origin>:<path>
+// origin can be 'out'
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list ipxgen]
+out:views/ipxact/MS90G_LP.xml
+
+// list of auto generated topics
+// syntax:
+//   <action>:<path>
+// action can be 'pi' or 'ipxact'
+//   if 'ipxact', then path is src:dst for xml to dita conversion
+//     both are assumed to be under <ws>/out/<ip>/<path>
+[list docgen]
+pi:docs/dita/docgen/MS90G_LP_pi.dita
+ipxact:views/ipxact/MS90G_LP.xml:docs/dita/docgen/MS90G_LP_ipxact.dita
+
+// list of manual typed topics
+// syntax:
+//   <origin>:<path>
+// origin can be 'src' or 'out'
+//   if src, then <ws>/<ip>/<path> will be used
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list topics]
+src:docs/dita/topics/MS90G_LP_intro.md
+src:docs/dita/topics/MS90G_LP_details.dita
+
+// list of files needed for datasheet generation
+// syntax:
+//   <origin>:<path>
+// origin can be 'src' or 'out'
+//   if src, then <ws>/<ip>/<path> will be used
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list datasheet]
+src:docs/dita/MS90G_LP_datasheet.ditamap
+src:docs/dita/MS90G_LP_datasheet.dita
+out:docs/dita/docgen/MS90G_LP_pi.dita
+//out:docs/dita/docgen/MS90G_LP_ipxact.dita
+(topics)
+
+// list of files needed for refman generation
+// syntax:
+//   <origin>:<path>
+// origin can be 'src' or 'out'
+//   if src, then <ws>/<ip>/<path> will be used
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list refman]
+src:docs/dita/MS90G_LP_refman.ditamap
+src:docs/dita/MS90G_LP_refman.dita
+(topics)

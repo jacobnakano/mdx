@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="tms_pll_refman.dita">
+        <topicref href="topics/tms_pll_intro.md" format="markdown"/>
+        <topicref href="topics/tms_pll_details.dita"/>
+    </topicref>
+</map>

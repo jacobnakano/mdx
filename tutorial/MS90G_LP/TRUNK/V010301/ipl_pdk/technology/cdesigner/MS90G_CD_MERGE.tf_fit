@@ -1,0 +1,111 @@
+;
+;
+controls(
+;
+leMPPControls (
+; P type guard ring    	name    	obj-list 		spacings	master-index
+leMPPDefinition 	(GLHVPW		("GLHVPW_MPP")      (1)  		0
+)
+leMPPDefinition 	(GLHVNW		("GLHVNW_MPP")      (1)  		0 
+)
+leMPPDefinition 	(GLHVDNW	("GLHVDNW_MPP")      (1)  		0 
+)
+leMPPDefinition 	(GRHVNW		("GRHVNW_MPP")      (1)  		0 
+)
+leMPPDefinition 	(GRHVPW		("GRHVPW_MPP")      (1)  		0 
+)
+
+leMPPDefinition 	(GRHVDNW	("GRHVDNW_MPP")      (1)  		0 
+)
+
+
+
+;
+leMPPRingObject ( GLHVPW_MPP 	"PDMasterPath"   (M1EncPath PIEncPath HVPWEncPath)  nil	(CTRectDefault)  nil
+;  net name  ExposedParameters
+ vss userParams (name netName)
+) ; MPP Ring Object
+
+leMPPRingObject ( GLHVNW_MPP 	"NDMasterPath"   (M1EncPath NIEncPath HVNWEncPath)  nil	(CTRectDefault)  nil
+;  net name  ExposedParameters
+ vss userParams (name netName)
+) ; MPP Ring Object
+
+leMPPRingObject ( GLHVDNW_MPP 	"NDMasterPath"   (M1EncPath NIEncPath DNWEncPath HVNW2EncPath)  nil	(CTRectDefault)  nil
+;  net name  ExposedParameters
+ vss userParams (name netName)
+) ; MPP Ring Object
+
+leMPPRingObject ( GRHVPW_MPP 	"PDMasterPath"   (M1EncPath PIEncPath HVPWEncPath)              nil	(CT2RectDefault)  nil
+;  net name  ExposedParameters
+ vss userParams (name netName)
+) ; MPP Ring Object
+
+leMPPRingObject ( GRHVNW_MPP 	"NDMasterPath"   (M1EncPath NIEncPath HVNWEncPath)              nil	(CTRectDefault)  nil
+;  net name  ExposedParameters
+ vss userParams (name netName)
+) ; MPP Ring Object
+
+leMPPRingObject ( GRHVDNW_MPP 	"NDMasterPath"   (M1EncPath NIEncPath  DNWEncPath HVNW2EncPath)   nil	(CT2RectDefault)  nil
+;  net name  ExposedParameters
+ vss userParams (name netName)
+) ; MPP Ring Object
+
+
+
+
+;            		name        		layer 		purpose		width		path-style	conn    chop
+leMPPMasterPath 	("PDMasterPath" 	"PD" 		drawing		0.22  		truncate 	t   	t
+userParams (name width layer purpose conn chop)
+) ; Master Path
+
+;            		name        		layer 		purpose		width		path-style	conn    chop
+leMPPMasterPath 	("NDMasterPath" 	"ND" 		drawing		0.22  		truncate 	t   	t
+userParams (name width layer purpose conn chop)
+) ; Master Path
+
+;             		name 	            	layer 		purpose 	enclosure 	path-style 	conn    chop
+leMPPEnclosedPath 	("M1EncPath"	 	"M1"		drawing 	0.0          	truncate 	t       t
+userParams (name layer purpose enclosure conn chop)
+) ; Enclosed Path
+
+;             		name 	            	layer 		purpose 	enclosure 	path-style 	conn    chop
+leMPPEnclosedPath 	("PIEncPath"	 	"PI"		drawing 	0.02          	truncate 	t       nil
+userParams (name layer purpose enclosure conn chop)
+) ; Enclosed Path
+
+;             		name 	            	layer 		purpose 	enclosure 	path-style 	conn    chop
+leMPPEnclosedPath 	("NIEncPath"	 	"NI"		drawing 	0.02          	truncate 	t       nil
+userParams (name layer purpose enclosure conn chop)
+) ; Enclosed Path
+;             		name 	            	layer 		purpose 	enclosure 	path-style 	conn    chop
+
+leMPPEnclosedPath 	("DNWEncPath"	 	"DNW"		drawing 	0.5         	truncate 	t       nil
+userParams (name layer purpose enclosure conn chop)
+) ; Enclosed Path
+
+;             		name 	            	layer 		purpose 	enclosure 	path-style 	conn    chop
+leMPPEnclosedPath 	("HVPWEncPath"	 	"HVPW"		drawing 	0.17          	truncate 	t       nil
+userParams (name layer purpose enclosure conn chop)
+) ; Enclosed Path
+
+;             		name 	            	layer 		purpose 	enclosure 	path-style 	conn    chop
+leMPPEnclosedPath 	("HVNWEncPath"	 	"HVNW"		drawing 	0.17          	truncate 	t       nil
+userParams (name layer purpose enclosure conn chop)
+) ; Enclosed Path
+
+;             		name 	            	layer 		purpose 	enclosure 	path-style 	conn    chop
+leMPPEnclosedPath 	("HVNW2EncPath"	 	"HVNW"		drawing 	2.0          	truncate 	t       nil
+userParams (name layer purpose enclosure conn chop)
+) ; Enclosed Path
+
+;             name layer purpose width height conn chop enc EOL spa spaType numRows
+leMPPSubRect (CTRectDefault  CT drawing 0.12 0.12 t t 0.05 0.05 0.14 fit 1
+userParams (name layer purpose width height conn chop minEnclosure eol spacing spaceType numRows)
+)
+leMPPSubRect (CT2RectDefault  CT drawing 0.12 0.12 t t 0.05 0.11 0.14 fit 1
+userParams (name layer purpose width height conn chop minEnclosure eol spacing spaceType numRows)
+)
+)
+
+

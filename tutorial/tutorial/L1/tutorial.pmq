@@ -1,0 +1,8 @@
+#define CHIP_TOP
+#include "tutorial:tutorial_doc.pmq"
+
+[list drc labels="flags"]
+SEALCHECK
+
+[list env]
+PMQ_DEFINE?=tutorial.tutorial:common.def

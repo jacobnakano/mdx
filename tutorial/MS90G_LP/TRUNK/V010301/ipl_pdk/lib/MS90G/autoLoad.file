@@ -1,0 +1,64 @@
+#########################################################################
+#
+# This file and the associated documentation are confidential 
+# and proprietary to Synopsys, Inc. 
+#
+# Copyright (c), 2008 Synopsys, Inc. All rights reserved.
+#
+# DISCLAIMER
+# The information contained herein is provided by Synopsys, Inc. on 
+# an "AS IS" basis without any warranty, and Synopsys has no obligation 
+# to support or otherwise maintain the information.
+#
+# Synopsys, Inc. disclaims any representation that the information 
+# does not infringe any intellectual property rights or proprietary
+# rights of any third parties. There are no other warranties given by
+# Synopsys, whether express, implied or statutory, including, without
+# limitation, implied warranties of merchantability and fitness for a
+# particular purpose.
+#
+# Synopsys, Inc. reserves the right to make changes to the information 
+# at any time and without notice.
+#
+#########################################################################
+#
+#	Change Log:
+#
+#	05 Oct 09 : Adding First version  STARC MS90G
+##########################################################################
+
+
+
+
+
+
+
+
+
+source [oa::getPath [oa::LibFind MS90G]]/../../source/system/ics_callback2.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/system/starc_DR.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/system/starc_common_cb.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/system/ics_formInitProc.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/callback/CM123.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/callback/RPOLY.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/callback/NPNV050.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/callback/PNPV050.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/callback/MOS.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/callback/starcMS90G_NL.tcl
+source [oa::getPath [oa::LibFind MS90G]]/../../source/callback/abutFunction.tcl
+#
+# Alias required to map the netlisting routine
+#
+#interp alias {} ansCdlCompPrim {} nlPrintauCdlPrimDevice
+
+proc starc_MS90G_getPDKVersion { } {
+    puts "\t#######################################"
+    puts "\tPDK Name\t\t: MS90G"
+#    puts "\tPDK Version\t\t: 1.6.2"
+    puts "\tPDK Version\t\t: V01-03-01"
+    puts "\tPDK Release Date\t: 6-Apr-2010"
+    puts "\tPDK Created Build\t: D-2009.12"
+    puts "\t#######################################\n"
+}
+starc_MS90G_getPDKVersion
+

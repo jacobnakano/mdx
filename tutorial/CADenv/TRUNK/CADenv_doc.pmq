@@ -1,0 +1,51 @@
+// convert properties to ipxact
+// syntax:
+//   <origin>:<path>
+// origin can be 'out'
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list ipxgen]
+out:views/ipxact/CADenv.xml
+
+// list of auto generated topics
+// syntax:
+//   <action>:<path>
+// action can be 'pi' or 'ipxact'
+//   if 'ipxact', then path is src:dst for xml to dita conversion
+//     both are assumed to be under <ws>/out/<ip>/<path>
+[list docgen]
+pi:docs/dita/docgen/CADenv_pi.dita
+//ipxact:views/ipxact/CADenv.xml:docs/dita/docgen/CADenv_ipxact.dita
+
+// list of manual typed topics
+// syntax:
+//   <origin>:<path>
+// origin can be 'src' or 'out'
+//   if src, then <ws>/<ip>/<path> will be used
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list topics]
+src:docs/dita/topics/CADenv_intro.md
+src:docs/dita/topics/CADenv_details.dita
+
+// list of files needed for datasheet generation
+// syntax:
+//   <origin>:<path>
+// origin can be 'src' or 'out'
+//   if src, then <ws>/<ip>/<path> will be used
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list datasheet]
+src:docs/dita/CADenv_datasheet.ditamap
+src:docs/dita/CADenv_datasheet.dita
+out:docs/dita/docgen/CADenv_pi.dita
+//out:docs/dita/docgen/CADenv_ipxact.dita
+(topics)
+
+// list of files needed for refman generation
+// syntax:
+//   <origin>:<path>
+// origin can be 'src' or 'out'
+//   if src, then <ws>/<ip>/<path> will be used
+//   if out, then <ws>/out/<ip>/<path> will be used
+[list refman]
+src:docs/dita/CADenv_refman.ditamap
+src:docs/dita/CADenv_refman.dita
+(topics)

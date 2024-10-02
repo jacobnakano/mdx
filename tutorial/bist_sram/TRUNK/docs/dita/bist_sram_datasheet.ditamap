@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="bist_sram_datasheet.dita">
+        <topicref href="topics/bist_sram_intro.md" format="markdown"/>
+        <topicref href="topics/bist_sram_details.dita"/>
+        <topicref href="docgen/bist_sram_pi.dita#pi"/>
+        <!-- <topicref href="docgen/bist_sram_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

@@ -1,0 +1,7 @@
+#include "CADenv:CADenv_doc.pmq"
+
+[list piflow]
+lib/piflow/*.py
+
+[list env]
+PATH+=${WS_PATH}/${IP_PATH}/bin

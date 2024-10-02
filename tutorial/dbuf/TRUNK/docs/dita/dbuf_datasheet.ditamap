@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="dbuf_datasheet.dita">
+        <topicref href="topics/dbuf_intro.md" format="markdown"/>
+        <topicref href="topics/dbuf_details.dita"/>
+        <topicref href="docgen/dbuf_pi.dita#pi"/>
+        <!-- <topicref href="docgen/dbuf_ipxact.dita#ipxact"/> -->
+    </topicref>
+</map>

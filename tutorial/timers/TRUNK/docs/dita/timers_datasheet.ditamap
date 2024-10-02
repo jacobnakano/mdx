@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <topicref href="timers_datasheet.dita">
+        <topicref href="topics/timers_intro.md" format="markdown"/>
+        <topicref href="topics/timers_details.dita"/>
+        <topicref href="docgen/timers_pi.dita#pi"/>
+        <topicref href="docgen/timers_ipxact.dita#ipxact"/>
+    </topicref>
+</map>
